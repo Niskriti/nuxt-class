@@ -27,11 +27,12 @@
             <div class="card">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="https://cdn.pixabay.com/photo/2023/05/28/05/34/bird-8022869_640.jpg" alt="">
+                        <img src="https://cdn.pixabay.com/photo/2023/05/28/05/34/bird-8022869_640.jpg" alt="" width="342 px">
                       
                     </div>
                     <div class="col-md-6">
-                        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita pariatur vitae exercitationem, tenetur illum delectus nulla eius consectetur neque magni!</h1>
+                        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita pariatur vitae exercitationem, tenetur illum delectus nulla eius consectetur neque magni!
+                        </h1>
                     </div>
                 </div>
             </div>
