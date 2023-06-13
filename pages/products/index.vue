@@ -1,6 +1,6 @@
 <template>
-<div>
-    <section class="py-5">
+    <div>
+        <section class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3" v-for="(product,index) in 30" :key="index">
@@ -18,10 +18,23 @@
             </div>
       </div>
     </section>
-</div>
+    </div>
 </template>
 
+<script setup>
 
+</script>
 
-  
-
+<style  scoped>
+img{
+    filter: grayscale();
+    transition: 1s;
+}
+img:hover{
+    filter: none;
+    transform: scale(2);
+}
+.image-box{
+    overflow: hidden;
+}
+</style>
