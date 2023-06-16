@@ -4,16 +4,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3" v-for="(product,index) in 30" :key="index">
-                    <div class="card" style="width: 18rem;">
-                       <div class="image-box">
-                        <img src="https://cdn.pixabay.com/photo/2020/09/21/12/40/meal-5589923_640.jpg" class="card-img-top" alt="...">
-                       </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                  <productCard></productCard>
+                 
                 </div>
             </div>
       </div>
@@ -22,19 +14,10 @@
 </template>
 
 <script setup>
-
+      const {data} = await useFetch("https://api.escuelajs.co/api/v1/products");
+      console.warn(data)
 </script>
 
 <style  scoped>
-img{
-    filter: grayscale();
-    transition: 1s;
-}
-img:hover{
-    filter: none;
-    transform: scale(2);
-}
-.image-box{
-    overflow: hidden;
-}
+
 </style>
